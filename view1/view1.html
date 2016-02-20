@@ -1,0 +1,24 @@
+ 
+
+<div style=" margin-left: 200px; width: 500px;"> 
+     <div class="row"> 
+         <h3>Password strength meter</h3> 
+         <p class="text-muted">Ng-password strength implementation</p>
+         
+         <div class="form-group"> 
+             <input type="text" class="form-control" id="inputPass" placeholder="Password" ng-model="user.password"> 
+             <h2>Vars</h2> 
+             <div> 
+                 <div ng-password-strength="user.password" strength="passStrength" inner-class="progress-bar" inner-class-prefix="progress-bar-"></div> 
+             </div>
+             
+
+         
+        </div> 
+         
+         <div>Current strength is <strong>{{passStrength}}</strong> </div> 
+     
+    </div>
+</div> 
+    
+
